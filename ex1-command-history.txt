@@ -1,0 +1,207 @@
+    1  mkdir CIT173_Lab4
+    2  ls /dev
+    3  ls /dev > ~/CIT173_Lab4/my-dev-nodes.txt
+    4  cat ~/CIT173_Lab4/my-dev-nodes.txt > /dev/full
+    5  head /dev/random
+    6  head /dev/random > ~/CIT173_Lab4/my-random-data.txt
+    7  cat ~/CIT173_Lab4/my-random-data.txt 
+    8  ls mods
+    9  lsmod
+   10  lsmod > ~/CIT173_Lab4/my-modules-1.txt
+   11  modinfo nfs
+   12  modinfo nfs > ~/CIT173_Lab4/my-nfs-info.txt
+   13  modprobe nfs
+   14  sudo modprobe nfs
+   15  modinfo nfs > ~/CIT173_Lab4/my-modules-2
+   16  sudo rmmod nfs > ~/CIT173_Lab4/my-modules-3
+   17  ls dir
+   18  lsdir
+   19  cd
+   20  ls
+   21  cat CIT173_Lab4/
+   22  cat ~/CIT173_Lab4/my-modules-1
+   23  cat ~/CIT173_Lab4/my-modules-1.txt
+   24  cat ~/CIT173_Lab4/my-modules-2.txt
+   25  modinfo nfs > ~/CIT173_Lab4/my-modules-2.txt
+   26  sudo rmmod nfs > ~/CIT173_Lab4/my-modules-3.txt
+   27  rm ~/CIT173_Lab4/my-modules-2.txt 
+   28  modprobe nfs > ~/CIT173_Lab4/my-modules-2.txt
+   29  sudo modprobe nfs > ~/CIT173_Lab4/my-modules-2.txt
+   30  sudo rmmod nfs > ~/CIT173_Lab4/my-modules-3.txt
+   31  #parted
+   32  # parted
+   33  parted
+   34  sudo parted
+   35  sudo fdisk m
+   36  sudo fdisk n
+   37  sudo # fdisk /dev/sdb
+   38  # fdisk /dev/sdb
+   39  n
+   40  # fdisk /dev/sdb n
+   41  sudo fdisk /dev/sdb
+   42  /dev
+   43  ls /dev
+   44  ls /dev/sbd
+   45  sudo mkfs.ext4 /dev/sdb
+   46  e2label /dev/sdb data
+   47  sudo e2label /dev/sdb data
+   48  sudo e4label /dev/sdb data
+   49  /dev/sdb
+   50  sudo /dev/sdb
+   51  sudo fdisk -l
+   52  sudo sfdisk -l /dev/sdb
+   53  sudo sfdisk -1/dev/sdb
+   54  lsblk
+   55  # fdisk /dev/sdb
+   56  sudo # fdisk /dev/sdb
+   57  sudo fdisk /dev/sdb
+   58  fdisk -s /dev/sdb
+   59  sudo fdisk -s /dev/sdb
+   60  history
+   61  sudo fdisk /dev/sdb
+   62  sudo mkfs.ext4 /dev/sdb
+   63  cat /dev/sdb
+   64  sudo cat /dev/sdb
+   65  df
+   66  ls dev/sdb
+   67  man dev
+   68  man /dev
+   69  cat fdisk
+   70  ls fdisk
+   71  ls dir
+   72  ls
+   73  ls CIT173_Lab4
+   74  ls -l /dev
+   75  ls -l /dev/sdb
+   76  lsblk
+   77  sudo fdisk -l
+   78  history
+   79  sudo fdisk
+   80  sudo fdisk /dev/sdb
+   81  cd
+   82  cd /dev
+   83  ls
+   84  q
+   85  cd
+   86  sudo fdisk /dev/sdb
+   87  cd /dev
+   88  ls
+   89  ls > ~/CIT173_Lab4/my-new-dev-nodes.txt
+   90  history
+   91  cd
+   92  sudo mkfs.ext4 /dev/sdb1
+   93  sudo mkfs.ext4 /dev/sdb2
+   94  mkdir /mnt/data
+   95  sudo mkdir /mnt/data
+   96  sudo mkdir /mnt/backup
+   97  sudo mount /dev/sdb1 /mnt/data
+   98  sudo mount /dev/sdb2 /mnt/backup
+   99  mount
+  100  mount > ~/CIT173_Lab4/my-mounts.txt
+  101  df
+  102  df > ~/CIT173_Lab4/my-disk-usage.txt
+  103  sudo umount /dev/sdb1 
+  104  sudo umount /dev/sdb2
+  105  sudo dd if=/dev/sdb of=~/CIT_Lab4/gpt.bin bs=512 count=34
+  106  sudo dd if=/dev/sdb of=~/CIT173_Lab4/gpt.bin bs=512 count=34
+  107  cd ~/CIT173_Lab4
+  108  git init
+  109  git remote add origin https://github.com/hartjasone/CIT173_Lab4.git
+  110  git add --all
+  111  git commit -m "Lab assignment 4"
+  112  git push origin master
+  113  mkdir CIT173_Lab6
+  114  sudo groupadd actors
+  115  sudo groupadd directors
+  116  sudo groupadd producers
+  117  groups
+  118  cat /etc/group
+  119  clear
+  120  sudo mkuser mhamill
+  121  sudo useradd mhamill
+  122  sudo mkpasswd
+  123  sudo passwd mhamill
+  124  man usermod
+  125  sudo usermod -a -G actors mhamill
+  126  groups mhamill
+  127  cat /etc/passwd
+  128  clear
+  129  man usermod
+  130  sudo usermod -l "Mark Hamill" mhamill
+  131  sudo usermod -l 'Mark Hamill' mhamill
+  132  man usermod
+  133  sudo usermod -c "Mark Hamill" mhamill
+  134  cat /etc/passwd
+  135  clear
+  136  wget https://github.com/RenoTechnologyAcademy/CIT173_Lab6_Files/archive/master.tar.gz
+  137  tar -xvf master.tar.gz 
+  138  cd /var
+  139  mkdir StarWars
+  140  sudo mkdir StarWars
+  141  ls
+  142  clear
+  143  sudo chmod a+rwx StarWars
+  144  ls -l
+  145  clear
+  146  mkdir StarWars/finance
+  147  mkdir StarWars/directing
+  148  mkdir StarWars/creative
+  149  ls
+  150  cd StarWars/
+  151  ls 
+  152  cd ..
+  153  mkdir StarWars/{dir1,dir2,dir3}
+  154  ls
+  155  ls ST
+  156  ls StarWars/
+  157  rmdir StarWars/{dir1,dir2,dir3}
+  158  ls
+  159  ls StarWars/
+  160  cd ~
+  161  ls
+  162  cd CIT173_Lab6_Files-master/
+  163  ls
+  164  mv star-wars-budget.txt /var/StarWars/finance/
+  165  ls
+  166  clear
+  167  ls
+  168  ls /var/StarWars/finance/
+  169  mv star-wars-journal.txt /var/StarWars/directing/
+  170  mv star-wars-script.txt /var/StarWars/creative/
+  171  man chown
+  172  man chmod
+  173  sudo useradd glucas
+  174  sudo useradd gkurtz
+  175  sudo chown gkurtz:producers /var/StarWars/finance
+  176  ls -l /var/StarWars/
+  177  sudo chown -R gkurtz:producers /var/StarWars/finance
+  178  sudo chmod -R 750 /var/StarWars/finance
+  179  ls -l /var/StarWars/
+  180  ls -l /var/StarWars/finance/
+  181  sudo ls -l /var/StarWars/finance/
+  182  clear
+  183  sudo ls -l /var/StarWars/finance/
+  184  history
+  185  clear
+  186  sudo useradd hford
+  187  sudo useradd cfisher
+  188  sudo useradd glucas
+  189  ls users
+  190  sudo passwd hford
+  191  sudo passwd cfisher
+  192  sudo passwd glucas
+  193  sudo passwd hford
+  194  sudo passwd cfisher
+  195  sudo passwd glucas
+  196  sudo passwd gkurtz
+  197  sudo usermod -a -G actors hford
+  198  sudo usermod -a -G actors cfisher
+  199  sudo usermod -a -G directors glucas
+  200  sudo usermod -a -G producers glucas
+  201  sudo usermod -a -G producers gkurtz
+  202  cp /etc/passwd ~/CIT173_Lab6
+  203  cp /etc/groups ~/CIT173_Lab6
+  204  ls etc/groups
+  205  ls /etc/group
+  206  cp /etc/group ~/CIT173_Lab6
+  207  history > ~/CIT173_Lab6/ex1-command-history.txt
